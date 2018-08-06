@@ -29,7 +29,7 @@
 
 Application programming interface for using the EOS blockchain via the RPC API provided by Block Producer Nodes. This is for read-only API calls.
 
-This project is wraps the official [eosio/eosjs-api](https://github.com/eosio/eosjs-api) to provide 
+This project wraps the official [eosio/eosjs-api](https://github.com/eosio/eosjs-api) to provide 
 camelcase output.  It only works with await/async and promise code style, there's no support for the callback style.
 
 *It is a work in progress.*
