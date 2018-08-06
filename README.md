@@ -27,7 +27,7 @@
 
 # EOS API module ( in CamelCase :camel:)  
 
-Application programming interface to EOS blockchain nodes. This is for read-only API calls.
+Application programming interface for using the EOS blockchain via the RPC API provided by Block Producer Nodes. This is for read-only API calls.
 
 This project is wraps the official [eosio/eosjs-api](https://github.com/eosio/eosjs-api) to provide 
 camelcase output.  It only works with await/async and promise code style, there's no support for the callback style.
@@ -81,7 +81,7 @@ logInfo()
 
 ```
 
-eosjs-api-camel functions recieve both snakecase and camelcase arguments and always return camelcase objects.
+eosjs-api-camel functions receive both snakecase and camelcase arguments and always return camelcase objects.
 
 
 ## Contributing
@@ -107,7 +107,7 @@ EOS Blockchain is aiming to become a decentralized operating system which can su
 
 EOS Costa Rica supports the EOS.io community by maintaining and contributing to open source initiatives, meetups and workshops.
 
-We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable internet resources to meet such an important challenge.
+We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable Internet resources to meet such an important challenge.
 
 [eoscostarica.io](https://eoscostarica.io)
 
