@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard --fix | snazzy",
+    "test": "echo 'no tests yet!'",
     "precommit": "lint-staged"
   },
   "lint-staged": {
