@@ -8,7 +8,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.{js,json}": [
+    "**/*.{js}": [
       "standard --fix | snazzy",
       "git add"
     ]
