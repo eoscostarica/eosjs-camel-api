@@ -81,8 +81,9 @@ logInfo()
 
 ```
 
-eosjs-api-camel functions receive both snakecase and camelcase arguments and always return camelcase objects.
+eosjs-camel-api functions receive both snakecase and camelcase arguments and always return camelcase objects.
 
+It defaults to the [Jungle Testnet](http://jungle.cryptolions.io/) via the the https://jungle.eoscr.io endpoint.
 
 ## Contributing
 
