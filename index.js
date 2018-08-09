@@ -10,17 +10,13 @@ const isFunction = param => typeof param === 'function'
 
 const defaultOptions = {httpEndpoint: 'http://jungle.eosio.cr'}
 
-const snakifyObjects = (argumentsObject) => {
-  const snakifiedArgs = {}
-    Object.keys(argumentsObject).forEach(argKey => {
-      if (isObject(argumentsObject[argKey])) {
-        snakifiedArgs[argKey] = snakeCaseKeys(argumentsObject[argKey])
-      } else {
-        snakifiedArgs[argKey] = argumentsObject[argKey]
-      }
-    })
-    return snakifiedArgs
-}
+const snakifyObjects = (argumentsObject) => 
+  Object
+    .entries(argumentsObject)
+    .reduce((prev, [ key, value ]) => ({
+      ...prev,
+      [key]: isObject(value) ? snakeCaseKeys(value) : value
+    }), {})
 
 const camelizeResponse = (response) => {
   if (isObject(response)) {
