@@ -12,14 +12,14 @@ const defaultOptions = {httpEndpoint: 'http://jungle.eosio.cr'}
 
 const snakifyObjects = (argumentsObject) => {
   const snakifiedArgs = {}
-  Object.keys(argumentsObject).forEach(argKey => {
-    if (isObject(argumentsObject[argKey])) {
-      snakifiedArgs[argKey] = snakeCaseKeys(argumentsObject[argKey])
-    } else {
-      snakifiedArgs[argKey] = argumentsObject[argKey]
-    }
-  })
-  return snakifiedArgs
+    Object.keys(argumentsObject).forEach(argKey => {
+      if (isObject(argumentsObject[argKey])) {
+        snakifiedArgs[argKey] = snakeCaseKeys(argumentsObject[argKey])
+      } else {
+        snakifiedArgs[argKey] = argumentsObject[argKey]
+      }
+    })
+    return snakifiedArgs
 }
 
 const camelizeResponse = (response) => {
@@ -49,6 +49,12 @@ const getInstance = options => {
       }
     }
   })
+  
+  //add custom utility function in camel namespace
+  camelApi.camel = {
+    getConfig: () => options // the initial options object
+  }
+
   return camelApi
 }
 

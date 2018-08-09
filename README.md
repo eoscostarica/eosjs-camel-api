@@ -85,6 +85,24 @@ eosjs-camel-api functions receive both snakecase and camelcase arguments and alw
 
 It defaults to the [Jungle Testnet](http://jungle.cryptolions.io/) via the https://jungle.eosio.cr endpoint.
 
+### Camel Namespace Functions
+
+eosjs-camel-api exposes functions that not part of `eosjs-api` in the `camel` namespace.  Eg
+
+```javascript
+const eosCamelApi = require('eosjs-camel-api')
+const jungleApi = eosCamelApi.getInstance() 
+const mainNetApi = eosCamelApi.getInstance({httpEndpoint: 'https://api.eosio.cr'}) 
+
+console.log(jungleApi.camel.getConfig())
+// { httpEndpoint: 'https://jungle.eosio.cr' }
+
+console.log(mainNetApi.camel.getConfig())
+// { httpEndpoint: 'https://api.eosio.cr' }
+
+```
+
+
 ## Contributing
 
 We follow the [open source collaborative ettiquete](https://github.com/rstacruz/collaborative-etiquette/blob/master/README.md#top), the [standardjs code style](https://standardjs.com).
