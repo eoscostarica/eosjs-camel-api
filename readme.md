@@ -109,7 +109,7 @@ We follow the [open source collaborative ettiquete](https://github.com/rstacruz/
 
 Read EOS Costa Rica's Open Source Contributing Guidelines for more detail
 
-https://learn.eoscostarica.io/open-source/
+https://developers.eoscostarica.io/docs/open-source-guidelines
 
 ## Bug Reporting
 
@@ -122,11 +122,10 @@ No possible bug report is too small.
 
 ## About EOS Costa Rica
 
-EOS Blockchain is aiming to become a decentralized operating system which can support large-scale decentralized applications.
+We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable internet resources to meet such an important challenge.
 
-EOS Costa Rica supports the EOS.io community by maintaining and contributing to open source initiatives, meetups and workshops.
+EOS Costa Rica supports the EOSIO community by maintaining and contributing to open source initiatives, meetups and workshops.
 
-We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable Internet resources to meet such an important challenge.
 
 [eoscostarica.io](https://eoscostarica.io)
 
